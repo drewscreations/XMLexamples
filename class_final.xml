@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE norseData SYSTEM "NorseAttackData.dtd">
+<!--<?xml-stylesheet type="text/xsl" href="NorseAttackData.xsl"?>-->
+
+<!-- 
+	This is an xml document containing information from the website http://map.norsecorp.com/#/
+	captured on 2017-04-18. The data from the 4 tables has been transcribed into the 4 
+	subelements: attackOrigins, attackTargets, attackTypes, and liveAttack. Any questions should
+	be redirected to the author who may be reached at davidolson@student.olympic.edu.
+	
+	Author: David Olson
+	Date: 2017-04-18
+	Assignment name: Mod 1 Lab XML: NorseAttackData.xml
+	1hr 40min on base assignment
+	50min on 2nd part and comments, pictures
+	
+	Note from the author:
+	I made the flag element in attackTargets and attackOrigins self closing because there was no
+	data in the element (even though there is some metadata for the URL). I made the ids for all subelements
+	be the first part of the name (eg for originId the first part of the name is origin) followed by a two
+	digit number because I assumed the tables would be less than 100 entries.
+	
+	Some of the color names have spaces, I assumed they were just descriptive and would not need to be
+	used later like the types.
+	-->
+<norseData xmlns:ipv4="https://tools.ietf.org/html/rfc791" xmlns:ipv6="https://tools.ietf.org/html/rfc2460" url="http://map.norsecorp.com/#/" captureDate="2017-04-18">
+	<liveAttack>
+		<attack attackId="attack01">
+			<timeStamp>10:16:27.828</timeStamp>
+			<attacker>Webhosting.Net Inc.</attacker>
+			<ipv4:attackerIp>67.215.180.165</ipv4:attackerIp>
+			<attackerGeo>
+				<attackerState>Miami</attackerState>
+				<attackerCountry>US</attackerCountry>
+			</attackerGeo>
+			<targetGeo>
+				<targetState>Miami</targetState>
+				<targetCountry>US</targetCountry>
+			</targetGeo>
+			<attackType color="#99ff99" colorName="seafoam green">netbios-ns</attackType>
+			<port>137</port>
+		</attack>
+		<attack attackId="attack02">
+			<timeStamp>10:16:27.272</timeStamp>
+			<attacker>University Of Michigan College Of Engineering</attacker>
+			<ipv4:attackerIp>141.212.122.125</ipv4:attackerIp>
+			<attackerGeo>
+				<attackerState>Ann Arbor</attackerState>
+				<attackerCountry>US</attackerCountry>
+			</attackerGeo>
+			<targetGeo>
+				<targetState>San Francisco</targetState>
+				<targetCountry>US</targetCountry>
+			</targetGeo>
+			<attackType color="lime">iso-tsap</attackType>
+			<port>102</port>
+		</attack>
+		<attack attackId="attack03">
+			<timeStamp>10:16:26.996</timeStamp>
+			<attacker>Net For Ankas</attacker>
+			<ipv4:attackerIp>46.161.40.120</ipv4:attackerIp>
+			<attackerGeo>
+				<attackerState>Luhansk</attackerState>
+				<attackerCountry>UA</attackerCountry>
+			</attackerGeo>
+			<targetGeo>
+				<targetState>Vienna</targetState>
+				<targetCountry>AT</targetCountry>
+			</targetGeo>
+			<attackType color="#99ff99" colorName="seafoam green">ms-wbt-server</attackType>
+			<port>3389</port>
+		</attack>
+		<attack attackId="attack04">
+			<timeStamp>10:16:26.732</timeStamp>
+			<attacker>Chinanet Hubei Province Network</attacker>
+			<ipv4:attackerIp>116.211.0.90</ipv4:attackerIp>
+			<attackerGeo>
+				<attackerState>Wuhan</attackerState>
+				<attackerCountry>CN</attackerCountry>
+			</attackerGeo>
+			<targetGeo>
+				<targetState>Dubai</targetState>
+				<targetCountry>AE</targetCountry>
+			</targetGeo>
+			<attackType color="#99ff99" colorName="seafoam green">http-alt</attackType>
+			<port>8080</port>
+		</attack>
+		<attack attackId="attack05">
+			<timeStamp>10:16:26.732</timeStamp>
+			<attacker>Chinanet Hubei Province Network</attacker>
+			<ipv4:attackerIp>116.211.0.90</ipv4:attackerIp>
+			<attackerGeo>
+				<attackerState>Wuhan</attackerState>
+				<attackerCountry>CN</attackerCountry>
+			</attackerGeo>
+			<targetGeo>
+				<targetState>Dubai</targetState>
+				<targetCountry>AE</targetCountry>
+			</targetGeo>
+			<attackType color="#99ff99" colorName="seafoam green">http-alt</attackType>
+			<port>8080</port>
+		</attack>
+		<attack attackId="attack06">
+			<timeStamp>10:16:26.424</timeStamp>
+			<attacker>Net For Ankas</attacker>
+			<ipv4:attackerIp>46.161.40.120</ipv4:attackerIp>
+			<attackerGeo>
+				<attackerState>Luhansk</attackerState>
+				<attackerCountry>UA</attackerCountry>
+			</attackerGeo>
+			<targetGeo>
+				<targetState>Roseville</targetState>
+				<targetCountry>US</targetCountry>
+			</targetGeo>
+			<attackType color="#99ff99" colorName="seafoam green">ms-wbt-server</attackType>
+			<port>3389</port>
+		</attack>
+		<attack attackId="attack07">
+			<timeStamp>10:16:26.196</timeStamp>
+			<attacker>Microsoft Corporation</attacker>
+			<ipv4:attackerIp>157.56.111.252</ipv4:attackerIp>
+			<attackerGeo>
+				<attackerState>Redmond</attackerState>
+				<attackerCountry>US</attackerCountry>
+			</attackerGeo>
+			<targetGeo>
+				<targetState>De Kalb Junctio</targetState>
+				<targetCountry>NA</targetCountry>
+			</targetGeo>
+			<attackType color="orange">smtp</attackType>
+			<port>25</port>
+		</attack>
+		<attack attackId="attack08">
+			<timeStamp>10:16:26.096</timeStamp>
+			<attacker>Microsoft Corporation</attacker>
+			<ipv4:attackerIp>207.46.100.245</ipv4:attackerIp>
+			<attackerGeo>
+				<attackerState>Redmond</attackerState>
+				<attackerCountry>US</attackerCountry>
+			</attackerGeo>
+			<targetGeo>
+				<targetState>De Kalb Junctio</targetState>
+				<targetCountry>NA</targetCountry>
+			</targetGeo>
+			<attackType color="orange">smtp</attackType>
+			<port>25</port>
+		</attack>
+		<attack attackId="attack09">
+			<timeStamp>10:16:25.502</timeStamp>
+			<attacker>Microsoft Corporation</attacker>
+			<ipv4:attackerIp>157.56.110.253</ipv4:attackerIp>
+			<attackerGeo>
+				<attackerState>Redmond</attackerState>
+				<attackerCountry>US</attackerCountry>
+			</attackerGeo>
+			<targetGeo>
+				<targetState>De Kalb Junctio</targetState>
+				<targetCountry>NA</targetCountry>
+			</targetGeo>
+			<attackType color="orange">smtp</attackType>
+			<port>25</port>
+		</attack>
+		<attack attackId="attack10">
+			<timeStamp>10:16:25.502</timeStamp>
+			<attacker>Adsl-Met- #304zmir- Static Pool</attacker>
+			<ipv4:attackerIp>85.98.94.160</ipv4:attackerIp>
+			<attackerGeo>
+				<attackerState>Istanbul</attackerState>
+				<attackerCountry>TR</attackerCountry>
+			</attackerGeo>
+			<targetGeo>
+				<targetState>San Francisco</targetState>
+				<targetCountry>US</targetCountry>
+			</targetGeo>
+			<attackType color="orange">telnet</attackType>
+			<port>25</port>
+		</attack>
+	</liveAttack>
+	<attackTargets>
+		<target targetId="target01">
+			<number>155</number>
+			<flag url="http://map.norsecorp.com/img/flags/US.png"/>
+			<country>United States</country>
+		</target>
+		<target targetId="target02">
+			<number>73</number>
+			<flag url="http://map.norsecorp.com/img/flags/AE.png"/>
+			<country>United Arab Emirat</country>
+		</target>
+		<target targetId="target03">
+			<number>36</number>
+			<flag url="http://map.norsecorp.com/img/flags/ES.png"/>
+			<country>Spain</country>
+		</target>
+		<target targetId="target04">
+			<number>12</number>
+			<flag url="http://map.norsecorp.com/img/flags/IT.png"/>
+			<country>Italy</country>
+		</target>
+		<target targetId="target05">
+			<number>10</number>
+			<flag url="http://map.norsecorp.com/img/flags/SG.png"/>
+			<country>Singapore</country>
+		</target>
+		<target targetId="target06">
+			<number>1</number>
+			<flag url="http://map.norsecorp.com/img/flags/SA.png"/>
+			<country>Saudi Arabia</country>
+		</target>
+		<target targetId="target07">
+			<number>1</number>
+			<flag url="http://map.norsecorp.com/img/flags/PT.png"/>
+			<country>Portugal</country>
+		</target>
+		<target targetId="target08">
+			<number>1</number>
+			<flag url="http://map.norsecorp.com/img/flags/NO.png"/>
+			<country>Norway</country>
+		</target>
+		<target targetId="target09">
+			<number>1</number>
+			<flag url="http://map.norsecorp.com/img/flags/HK.png"/>
+			<country>Hong Kong</country>
+		</target>
+		<target targetId="target10">
+			<number>1</number>
+			<flag url="http://map.norsecorp.com/img/flags/FR.png"/>
+			<country>France</country>
+		</target>
+	</attackTargets>
+	<attackTypes>
+		<attack typeId="type01">
+			<number>81</number>
+			<port>25</port>
+			<attackType color="orange">smtp</attackType>
+		</attack>
+		<attack typeId="type02">
+			<number>67</number>
+			<port>23</port>
+			<attackType color="orange">telnet</attackType>
+		</attack>
+		<attack typeId="type03">
+			<number>61</number>
+			<port>8080</port>
+			<attackType color="#99ff99" colorName="seafoam green">http-alt</attackType>
+		</attack>
+		<attack typeId="type04">
+			<number>17</number>
+			<port>5900</port>
+			<attackType color="lime">rfb</attackType>
+		</attack>
+		<attack typeId="type05">
+			<number>17</number>
+			<port>3389</port>
+			<attackType color="#99ff99" colorName="seafoam green">ms-wbt-server</attackType>
+		</attack>
+		<attack typeId="type06">
+			<number>10</number>
+			<port>3306</port>
+			<attackType color="yellow">mysql</attackType>
+		</attack>
+		<attack typeId="type07">
+			<number>8</number>
+			<port>50864</port>
+			<attackType color="#99ff99" colorName="seafoam green">xsan-filesystem</attackType>
+		</attack>
+		<attack typeId="type08">
+			<number>4</number>
+			<port>445</port>
+			<attackType color="lime">microsoft-ds</attackType>
+		</attack>
+		<attack typeId="type09">
+			<number>3</number>
+			<port>22</port>
+			<attackType color="orange">ssh</attackType>
+		</attack>
+		<attack typeId="type10">
+			<number>2</number>
+			<port>21027</port>
+			<attackType color="#99ff99" colorName="seafoam green">unknown</attackType>
+		</attack>
+	</attackTypes>
+	<attackOrigins>
+		<target originId="origin01">
+			<number>124</number>
+			<flag url="http://map.norsecorp.com/img/flags/CN.png"/>
+			<country>China</country>
+		</target>
+		<target originId="origin02">
+			<number>108</number>
+			<flag url="http://map.norsecorp.com/img/flags/US.png"/>
+			<country>United States</country>
+		</target>
+		<target originId="origin03">
+			<number>13</number>
+			<flag url="http://map.norsecorp.com/img/flags/UA.png"/>
+			<country>Ukraine</country>
+		</target>
+		<target originId="origin04">
+			<number>7</number>
+			<flag url="http://map.norsecorp.com/img/flags/NL.png"/>
+			<country>Netherlands</country>
+		</target>
+		<target originId="origin05">
+			<number>6</number>
+			<flag url="http://map.norsecorp.com/img/flags/KR.png"/>
+			<country>South Korea</country>
+		</target>
+		<target originId="origin06">
+			<number>5</number>
+			<flag url="http://map.norsecorp.com/img/flags/ES.png"/>
+			<country>Spain</country>
+		</target>
+		<target originId="origin07">
+			<number>4</number>
+			<flag url="http://map.norsecorp.com/img/flags/TR.png"/>
+			<country>Turkey</country>
+		</target>
+		<target originId="origin08">
+			<number>4</number>
+			<flag url="http://map.norsecorp.com/img/flags/CO.png"/>
+			<country>Columbia</country>
+		</target>
+		<target originId="origin09">
+			<number>3</number>
+			<flag url="http://map.norsecorp.com/img/flags/RO.png"/>
+			<country>Romania</country>
+		</target>
+		<target originId="origin10">
+			<number>3</number>
+			<flag url="http://map.norsecorp.com/img/flags/PH.png"/>
+			<country>Phillipines</country>
+		</target>
+	</attackOrigins>
+</norseData>
