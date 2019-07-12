@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE lavenderPlants SYSTEM "mod_3_troubleshooting_dtd.dtd">
+<!-- 
+	This is an XML document for categorizing lavender plants
+	
+	Author: David Olson
+	Date: 2017-04-12
+	Reason: Mod 1 Troubleshooting XML
+	
+	-->
+<lavenderPlants source="lavenderconnection.com">
+	<lavender name="hidcote pink">
+		<type>angustifolia</type>
+		<cooking edible = "true" flavor = "9"/>
+		<stem>short</stem>
+		<crafting>poor</crafting>
+		<color>pink</color>
+	</lavender>
+	<lavender name="royal velvet">
+		<type>intermedia</type>
+		<cooking edible = "true" flavor = "8"/>
+		<stem>long</stem>
+		<crafting>ok</crafting>
+		<color>dark purple</color>
+	</lavender>
+	<lavender name="sharon roberts">
+		<type>intermedia</type>
+		<cooking edible = "true" flavor = "5"/>
+		<stem>long</stem>
+		<crafting>great</crafting>
+		<color>light purple</color>
+	</lavender>
+	<lavender name="sachet">
+		<type>intermedia</type>
+		<cooking edible = "true" flavor = "6"/>
+		<stem>long</stem>
+		<crafting>ok</crafting>
+		<color>light purple</color>
+	</lavender>
+	<lavender name="row 19">
+		<type>intermedia</type>
+		<cooking edible = "true" flavor = "5"/>
+		<stem>long</stem>
+		<crafting>great</crafting>
+		<color>dark purple</color>
+	</lavender>
+</lavenderPlants>
